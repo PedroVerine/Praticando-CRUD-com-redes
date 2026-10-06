@@ -1,3 +1,5 @@
+
+
 <?php
 
 require_once "index.php"; // é tipo o import do py 
@@ -11,10 +13,17 @@ foreach ($resultado as $equipamento) {
 }
 
 // 
-foreach ($resultado as $equpamento) {
-    echo $equipamento["portas"] ,PHP_EOL;
-        echo $equipamento["id"] ,PHP_EOL;
-                echo $equipamento["tipo"] ,PHP_EOL;
-
-
+foreach ($resultado as $equipamento) {
+    echo "ID: " . $equipamento["id"] . PHP_EOL;
+    echo "Tipo: " . $equipamento["tipo"] . PHP_EOL;
+    echo "Portas: " . $equipamento["portas"] . PHP_EOL;
+    echo "-------------------" . PHP_EOL;
 }
+
+
+
+foreach($resultado as $equipamentos) {
+   if ($equipamentos["portas"] > 10) {
+    echo " Alta capacidade";}
+    else {
+        echo "Baixa capacidade";}}
