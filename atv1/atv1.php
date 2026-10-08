@@ -27,3 +27,27 @@ foreach($resultado as $equipamentos) {
     echo " Alta capacidade";}
     else {
         echo "Baixa capacidade";}}
+
+
+
+
+
+
+
+
+
+
+foreach ($resultado as $equipamento) {
+
+    echo "ID: " . $equipamento["id"] . PHP_EOL;
+    echo "Tipo: " . $equipamento["tipo"] . PHP_EOL;
+    echo "Portas: " . $equipamento["portas"] . PHP_EOL;
+
+    if ($equipamento["portas"] > 30) {
+        echo "Alta capacidade" . PHP_EOL;
+    } else {
+        echo "Baixa capacidade" . PHP_EOL;
+    }
+
+    echo "-------------------" . PHP_EOL;
+}
